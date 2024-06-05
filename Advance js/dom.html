@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+   
+</body>
+<script>
+    for(let i=0;i<10;i++){
+    const div = document.createElement('div')
+    div.className="main"
+    div.id= Math.round(Math.random() *10 +1)
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor="green"
+    div.style.padding="15px"
+    div.style.margin="15px"
+    const addtext= document.createTextNode("Happy yadav")
+    div.appendChild(addtext)
+    document.body.appendChild(div)
+    }
+</script>
+</html>
