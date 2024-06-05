@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>java</li>
+        <li>python</li>
+        <li>c++</li>
+    </ul>
+</body>
+<script>
+    function addlang(langname){
+        const ul = document.querySelector('ul');
+        const li = document.createElement('li');
+        li.textContent = langname;
+        ul.appendChild(li);
+    }
+    addlang("golang");
+    addlang("ruby");
+    const ruby = document.querySelector('li:last-child')
+    ruby.remove()
+</script>
+</html>
