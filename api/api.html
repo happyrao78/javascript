@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Image</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .image {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 230px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        #btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        #btn:active {
+            background-color: #003f7f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <button id="btn">Click Here</button>
+        </div>
+    </div>
+    <script src="api.js"></script>
+</body>
+</html>
