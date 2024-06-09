@@ -1,10 +1,10 @@
 let  picture;
 const requestUrl = 'https://api.github.com/users/happyrao78'
-const xhr = new XMLHttpRequest()
-xhr.open('GET',requestUrl)
+const xhr = new XMLHttpRequest()//request
+xhr.open('GET',requestUrl)//open
 xhr.onreadystatechange= ()=>{
     console.log(xhr.readyState);
-    if(xhr.readyState ===4){
+    if(xhr.readyState === 4){
         const data = JSON.parse(xhr.responseText)
          picture = data.avatar_url
         // console.log(picture)
