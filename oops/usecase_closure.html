@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #313131;">
+    <!-- <div class="counter">2</div> -->
+    <button id="orange">orange</button>
+    <button id="red">red</button>
+    <script>
+        const clickhandler = (color)  =>{
+            return ()=>{
+                document.body.style.backgroundColor =  `${color}`        
+              }
+        }
+        document.querySelector('#orange').addEventListener('click', clickhandler('orange'));
+        document.querySelector('#red').addEventListener('click', clickhandler('red'));
+    </script>
+</body>
+</html>
